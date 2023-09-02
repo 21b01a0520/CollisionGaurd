@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portal - Project Request Status</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+    h1 {
+      color: #555;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .status-approved {
+      color: green;
+    }
+    .status-rejected {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Project Request Status</h1>
+
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Project ID</th>
+          <th>Project Title</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>E-commerce Website Development</td>
+          <td class="status-in-progress">In Progress</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Intelligent Personal Assistant for Task Management</td>
+          <td class="status-approved">Approved</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Smart Home Automation System</td>
+          <td class="status-rejected">Rejected</td>
+        </tr>
+        <!-- Add more rows for additional project requests -->
+      </tbody>
+    </table>
+
+    <div class="alert alert-info" role="alert">
+      <strong>Note:</strong> This page displays the status of your submitted project requests. The table above shows the project ID, project title, and current status of each request.
+    </div>
+
+    <div class="alert alert-info" role="alert">
+      <strong>Status Values:</strong><br>
+      <strong>In Progress:</strong> Your project request is being reviewed and processed.<br>
+      <strong>Approved:</strong> Your project request has been approved, and you can proceed with the project.<br>
+      <strong>Rejected:</strong> Your project request has been rejected. Please review the feedback provided and make necessary changes or submit a new request.
+    </div>
+
+    <div class="alert alert-info" role="alert">
+      If you have any questions or concerns regarding your project request, please contact the relevant department or project coordinator.
+    </div>
+
+  </div>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

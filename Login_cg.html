@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+     background-image: url("img.jpg");
+     background-size: 70% 70%;
+     overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      width: 300px;
+      margin-right: 50px;
+      margin-left:50px;
+    }
+
+    .login-box h1{
+      text-align: center;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #00a2a2;
+      border: none;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 10px;
+      color: #777;
+    }
+	
+</style>
+<title>Project Management System</title>
+</head>
+<div>
+<body>
+<table width="100%"  border="0"cellspacing="00" cellpadding="00">
+  <tr bgcolor="#00a2a2">
+    <th width="74" scope="col">&nbsp;</th>
+    <th width="164" scope="col"><img src="mlogo.jpg" width="80" height="80"/></th>
+    <th width="646" height = "100" scope="col" ><font size="8" color="White">Collision Gaurd</font></th>
+    <th width="140" scope="col"><font color="White" size="5">
+    </font></th>
+    <th width="63" scope="col">&nbsp;</th>
+  </tr>
+</table>
+
+     <div class="container">
+    <div class="login-box">
+      <h1>Student Login</h1>
+      <form method="post" action="LoginServlet" >
+        <input type="text" name="student_username" placeholder="Username" id="student_username" required >
+        <input type="password" name="student_password" placeholder="Password" id="student_password" required >
+        <input type="submit" value="Login" >
+        <p class="message">Not registered? <a href="addstudent.html">Register</a></p>
+      </form>
+    </div>
+    <div class="login-box">
+      <h1>Faculty Login</h1>
+      <form  method="post" action="FLoginServlet">
+        <input type="text" name="faculty_username" placeholder="Username" id="faculty_username" required>
+        <input type="password" name="faculty_password" placeholder="Password"id="faculty_username" required>
+        <input type="submit" value="Login" >
+        <p class="message">Not registered? <a href="addfaculty.html">Register</a></p>
+      </form>
+
+    </div>
+  </div>
+      </div>
+ 
+ <?html
+}
+elseif($role=="Faculty")    
+{
+?>
+    <?html
+   header('Location:../Admin.html');
+   ?>
+ <?html
+}
+else   
+{
+?>
+   <?html
+   header('Location:../Admin.html');
+   ?>
+<?html
+}
+?>
+</table>
+<?html
+}
+?>

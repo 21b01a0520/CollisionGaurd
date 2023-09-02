@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Website</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap">
+<style>
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper{
+	background: url(bg1.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+.navbar .logo{
+	width: 100px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: green;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: black;
+	font-size: 70px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+.center h2{
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+        margin-left : 600px;
+	width: 1200px;
+	text-align: center;
+        
+    
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust this value as needed */
+}
+
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: green;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 25px;
+  transition: .4s;
+}
+
+.buttons .btn1{
+	margin-right: 155px;
+               
+}
+.buttons .btn2{
+	margin-left: 155px;
+               
+}
+.buttons button:hover{
+	background: green;
+}
+ footer{
+        width: 100%;
+        padding-top: 550px;
+        display: flex;
+      }
+      footer .tag{
+        background: linear-gradient(45deg, #fdba61, #ff5acd);
+        color: rgb(22, 20, 20);
+        width: 70%;
+        height: 300px;
+        padding-left: 10px;
+      }
+      footer .tag h1{
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      footer .tag p{
+        padding-left: 60px;
+      }
+.center .buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+                 
+                 
+}
+.buttons button {
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	background: green;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid green;
+	border-radius: 25px;
+	transition: .4s;
+margin-left:100px;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+			<nav class="navbar">
+				<img class="logo" src="logo.jpg">
+				<ul>
+					<li><a href="http://localhost:4040/Allocate/RetrieveRequestsServlet">Requests</a></li>
+					<li><a href="#Contact">Contact</a></li>
+                                                                                <li><a href="Login_cg.html">Logout</a></li>
+				</ul>
+			</nav>
+			<div class = "center">
+			<h2>Welcome To Collision Gaurd</h2>
+			<h2>Avoid Collision Create Something New</h2>
+			
+
+		</div>
+		</div>
+<br><br>
+
+  <footer>
+      <div class="tag" id="Contact">
+        <h1>Contact Us :</h1><br>
+        <p class="main">SHRI VISHNU ENGINEERING COLLEGE FOR WOMEN(Autonomous)<br></p>
+        <p>APPROVED BY A.I.C.T.E & AFFILIATED TO JNTUK, KAKINADA<br>Counselling Code - VISW<br>
+        Vishupur,BHIMAVARAM-534202<br>West Godavari District,Andhra Pradesh, India.<br><br><br></p>
+        <p><bold>Phone:</bold> 08816-250864</p>
+        <p><bold>Fax:</bold> 08816-250099</p>
+        <p><bold>Email:</bold> info@svecw.edu.in,priciple@svecw.edu.in</p>       
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.1666146608172!2d81.51990931478478!3d16.56811898857441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd4eb220051d%3A0xea3d7b50d0a1458!2sShri%20Vishnu%20Engineering%20College%20Autonomous!5e0!3m2!1sen!2sin!4v1669296313757!5m2!1sen!2sin" width="450px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  </footer>
+</body>
+</html>
